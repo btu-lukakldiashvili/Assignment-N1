@@ -1,3 +1,5 @@
+import kotlin.math.abs
+
 fun main () {
 //    var p1 = Point(2F, 5F)
 //    var p2 = Point(4F, 7F)
@@ -23,8 +25,8 @@ fun main () {
 }
 
 fun GCD (n : Float, d: Float): Float {
-    var n1: Int = n.toInt();
-    var n2: Int = d.toInt();
+    var n1: Int = abs(n.toInt());
+    var n2: Int = abs(d.toInt());
 
     while (n1 != 0 && n2 != 0) {
         if (n1 > n2)
